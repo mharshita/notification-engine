@@ -5,7 +5,7 @@ Instead of integrating with real SMS or email services, the engine will print lo
 
 Your system must support:
 
-1. Multiple Notification Types
+__1. Multiple Notification Types__
 
 - OTP (highest priority, should be sent fastest)
 
@@ -13,23 +13,23 @@ Your system must support:
 
 - Promotional messages (lowest priority)
 
-2. Priority Handling
+__2. Priority Handling__
 
 - Notifications must be processed in priority order, not just the order they are received.
 
-3. Parallel Processing
+__3. Parallel Processing__
 
 - Multiple notifications should be processed in parallel using threads.
 
 - OTPs should ideally be picked first and processed faster.
 
-4. Error Handling
+__4. Error Handling__
 
 - Each notification should be processed inside try–catch.
 
 - Failing tasks should not crash the engine.
 
-5. Logs
+__5. Logs__
 
 - Every step should log what the system is doing.
 
